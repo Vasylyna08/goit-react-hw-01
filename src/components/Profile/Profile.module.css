@@ -1,0 +1,78 @@
+.profContainer {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.profInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  padding-bottom: 24px;
+}
+
+.profImg {
+  border-radius: 50%;
+  background-color: rgb(45, 45, 45);
+}
+
+.profName {
+  color: black;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.profTag {
+  font-weight: 400;
+  font-size: 36px;
+  color: dimgray;
+}
+
+.profLocation {
+  font-weight: 400;
+  font-size: 36px;
+  color: dimgray;
+}
+
+.profList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(217, 217, 217);
+  border-top: 2px solid gray;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+}
+
+.profItem {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  max-width: 185px;
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+}
+
+.profItem:not(:last-child) {
+  border-right: 2px solid gray;
+}
+
+.profTitle {
+  font-weight: 400;
+}
+
+.profStats {
+  font-weight: 600;
+}

@@ -1,0 +1,16 @@
+.friendListImg {
+  margin-bottom: 8px;
+}
+
+.friendListName {
+  font-size: 18px;
+}
+
+.friendListStatus {
+  font-size: 14px;
+  color: red;
+}
+
+.friendOnline {
+  color: green;
+}

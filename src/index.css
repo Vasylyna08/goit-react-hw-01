@@ -38,3 +38,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  padding: 40px;
+  margin: 0 auto;
+}

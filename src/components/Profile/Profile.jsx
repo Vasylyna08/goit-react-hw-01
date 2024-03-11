@@ -1,25 +1,27 @@
+import css from './Profile.module.css';
+
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
-      <div>
-        <img src={image} alt={name} />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={css.profContainer}>
+      <div className={css.profInfo}>
+        <img className={css.profImg} src={image} alt={name} />
+        <p className={css.profName}>{name}</p>
+        <p className={css.profTag}>@{tag}</p>
+        <p className={css.profLocation}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+      <ul className={css.profList}>
+        <li className={css.profItem}>
+          <span className={css.profTitle}>Followers</span>
+          <span className={css.profStats}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
+        <li className={css.profItem}>
+          <span className={css.profTitle}>Views</span>
+          <span className={css.profStats}>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+        <li className={css.profItem}>
+          <span className={css.profTitle}>Likes</span>
+          <span className={css.profStats}>{stats.likes}</span>
         </li>
       </ul>
     </div>
